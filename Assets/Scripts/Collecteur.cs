@@ -27,35 +27,37 @@ public class Collecteur : MonoBehaviour
         {
             return;
         }
+
+        Destroy(autre.gameObject);
+        batteriesCollectees++;
+        Debug.Log($"Batteries : {batteriesCollectees}/{objectif}");
+
+
+
         if (batteriesCollectees >= objectif)
         {
-            Destroy(autre.gameObject);
             porteSortie.SetActive(true);
-            batteriesCollectees++;
+            Debug.Log("PORTE DÉVERROUILLÉE !");
         }
 
-        Debug.Log($"Batteries : {batteriesCollectees}/{objectif}");
-        Debug.Log("PORTE DÉVERROUILLÉE !");
 
+        /*
+         * BANQUE DE LIGNES — GROUPE B
+         * Certaines lignes doivent être placées à l'intérieur d'un if.
+         * Ajoutez les accolades et l'indentation nécessaires.
+         *porteSortie.SetActive(true);
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * 
+         * porteSortie.SetActive(true);
+         * Destroy(autre.gameObject);
+         * 
+         * Debug.Log($"Batteries : {batteriesCollectees}/{objectif}");
+         * 
+         */
     }
-
-
-    /*
-     * BANQUE DE LIGNES — GROUPE B
-     * Certaines lignes doivent être placées à l'intérieur d'un if.
-     * Ajoutez les accolades et l'indentation nécessaires.
-     *
-     * 
-     * 
-     * 
-     * if (batteriesCollectees >= objectif)
-     * batteriesCollectees++;
-     * 
-     * 
-     * porteSortie.SetActive(true);
-     * Destroy(autre.gameObject);
-     * 
-     * Debug.Log($"Batteries : {batteriesCollectees}/{objectif}");
-     * 
-     */
 }
