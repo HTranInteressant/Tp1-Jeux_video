@@ -1,0 +1,3 @@
+Pourquoi utilise-t-on des valeurs de suivi différentes pour les trois couches de parallaxe?
+
+Réponse: Selon moi, pour créer une illusion du background 2D, c'est comme si c'étais 3D mais c'est 2D enfaite.
